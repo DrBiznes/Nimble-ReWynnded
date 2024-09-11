@@ -1,4 +1,4 @@
-# Nimble Rewynnded
+# Nimble ReWynnded
 
 ![NimbleReWynndedBanner](https://github.com/user-attachments/assets/4a9b2df8-17ce-4775-9976-2f2a0a54b2f8)
 
