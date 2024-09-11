@@ -2,8 +2,7 @@
 
 ![NimbleReWynndedBanner](https://github.com/user-attachments/assets/4a9b2df8-17ce-4775-9976-2f2a0a54b2f8)
 
-Wynncraft-specific camera utilities, inspired by the mod Nimble. Fixes weird third-person bugs during Wynncraft cutscenes and adds many features from the famous Nimble mod by Snownee.
-
+Wynncraft-specific camera utilities, inspired by the mod Nimble. Fixes weird third-person bugs during Wynncraft cutscenes and adds many features from the famous Nimble mod by Snownee. Still early in development, and made for my modpack [World of Wynncraft](https://modrinth.com/modpack/world-of-wynncraft)
 
 ## What's Up
 - Automatically switches to third-person view when mounting horses, boats, or minecarts
