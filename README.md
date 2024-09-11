@@ -1,5 +1,7 @@
 # Nimble Rewynnded
-![NimbleRewynndedBanner](https://placeholderimage.com/nimblerewynnded-banner)
+
+![NimbleReWynndedBanner](https://github.com/user-attachments/assets/89c1f674-49bc-4add-920a-7cb5ce340c1a)
+
 Wynncraft-specific camera utilities, inspired by the mod Nimble. Fixes weird third-person bugs during Wynncraft cutscenes and adds many features from the famous Nimble mod by Snownee.
 
 
@@ -14,11 +16,11 @@ Wynncraft-specific camera utilities, inspired by the mod Nimble. Fixes weird thi
 1. Make sure you have Fabric Loader and Fabric API installed
 2. Download the latest version of Nimble Rewynnded from the versions page
 3. Place the downloaded .jar file in your Minecraft mods folder
-4. Ride off into the Wynncraft sunset in style!
+4. Ride off into the Wynncraft sunset
 
 ## Future Features
-- Special camera effects for Wynncraft-specific events
-- Custom perspectives for different Wynncraft classes
+- Smooth camera transitions will be added once Nimble updates to 1.21
+- More robust Wynncraft cutscene detection
 - Suggest features on the GitHub issues page! (We promise we won't send you on a fetch quest)
 
 ## Configuration
@@ -34,9 +36,8 @@ This mod creates its own section in the change keybinds menu so just make sure t
 
 ## Requirements
 - Minecraft 1.21
-- Fabric Loader 0.15.11 or higher
+- Fabric Loader 0.16.0 or higher
 - Fabric API
-- A love for smooth camera transitions in Wynncraft
 
 ## Go Ham
 - I don't know nothing about java so if you wanna fork this and fix it up go ham.
@@ -47,4 +48,4 @@ This mod creates its own section in the change keybinds menu so just make sure t
 - Thanks to the Wynncraft team for creating such an awesome RPG experience
 
 ## Support
-If you encounter any issues or have any questions (like "Why doesn't this mod make my character do a barrel roll?"), please open an issue on the GitHub repository. We'll do our best to help, even if we're in the middle of a boss fight!
+
