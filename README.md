@@ -20,7 +20,7 @@ Wynncraft-specific camera utilities, inspired by the mod Nimble. Fixes weird thi
 ## Future Features
 - Smooth camera transitions will be added once Nimble updates to 1.21
 - More robust Wynncraft cutscene detection
-- Suggest features on the GitHub issues page! (We promise we won't send you on a fetch quest)
+- Suggest features on the GitHub issues page!
 
 ## Configuration
 This mod creates its own section in the change keybinds menu so just make sure to set your new keybinds in that section.
