@@ -48,4 +48,4 @@ This mod creates its own section in the change keybinds menu so just make sure t
 - Thanks to the Wynncraft team for creating such an awesome RPG experience
 
 ## Support
-
+If you encounter any issues or have any questions, please open an issue on the GitHub repository.
