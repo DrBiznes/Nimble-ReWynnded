@@ -1,6 +1,6 @@
 # Nimble Rewynnded
 
-![NimbleReWynndedBanner](https://github.com/user-attachments/assets/89c1f674-49bc-4add-920a-7cb5ce340c1a)
+![NimbleReWynndedBanner](https://github.com/user-attachments/assets/4a9b2df8-17ce-4775-9976-2f2a0a54b2f8)
 
 Wynncraft-specific camera utilities, inspired by the mod Nimble. Fixes weird third-person bugs during Wynncraft cutscenes and adds many features from the famous Nimble mod by Snownee.
 
