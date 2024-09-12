@@ -9,7 +9,8 @@
 	],
 	"contact": {
 		"homepage": "https://modrinth.com/project/nimble-rewynnded",
-		"sources": "https://github.com/DrBiznes/Nimble-ReWynnded"
+		"sources": "https://github.com/DrBiznes/Nimble-ReWynnded",
+		"issues": "https://github.com/DrBiznes/Nimble-ReWynnded/issues"
 	},
 	"license": "MIT",
 	"icon": "assets/nimblerewynnded/icon.png",
@@ -31,7 +32,7 @@
 	"custom": {
 		"modmenu": {
 			"links": {
-				"modmenu.discord": "https://discord.gg/YOUR_DISCORD_INVITE"
+				"modmenu.discord": "https://discord.gg/jqFF64rXZZ"
 			}
 		}
 	}
