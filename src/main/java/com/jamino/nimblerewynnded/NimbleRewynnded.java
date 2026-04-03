@@ -12,6 +12,10 @@ import net.minecraft.world.level.GameType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.vehicle.minecart.AbstractMinecart;
 import net.minecraft.world.entity.animal.equine.Horse;
+import net.minecraft.world.entity.animal.equine.SkeletonHorse;
+import net.minecraft.world.entity.animal.equine.ZombieHorse;
+import net.minecraft.world.entity.animal.camel.Camel;
+import net.minecraft.world.entity.decoration.ArmorStand;
 import net.minecraft.world.entity.vehicle.boat.Boat;
 import net.minecraft.world.entity.monster.Strider;
 import org.lwjgl.glfw.GLFW;
@@ -108,14 +112,22 @@ public class NimbleRewynnded implements ClientModInitializer {
         if (isRiding != wasRiding) {
             if (isRiding) {
                 Entity vehicle = client.player.getVehicle();
-                if (!wasInSpectator && shouldChangePerspective(vehicle)) {
-                    preRidingPerspective = client.options.getCameraType();
-                    if (preRidingPerspective == CameraType.FIRST_PERSON ||
-                            preRidingPerspective == CameraType.THIRD_PERSON_FRONT) {
-                        client.options.setCameraType(CameraType.THIRD_PERSON_BACK);
+                if (vehicle != null) {
+                    // String msg = "[Nimble] Mounted: " + vehicle.getClass().getSimpleName();
+                    // System.out.println(msg);
+                    // client.player.displayClientMessage(Component.literal(msg), false);
+                    
+                    if (!wasInSpectator && shouldChangePerspective(vehicle)) {
+                        preRidingPerspective = client.options.getCameraType();
+                        if (preRidingPerspective == CameraType.FIRST_PERSON ||
+                                preRidingPerspective == CameraType.THIRD_PERSON_FRONT) {
+                            client.options.setCameraType(CameraType.THIRD_PERSON_BACK);
+                        }
                     }
                 }
             } else {
+                // System.out.println("[Nimble] Dismounted.");
+                // client.player.displayClientMessage(Component.literal("[Nimble] Dismounted."), false);
                 if (!wasInSpectator) {
                     client.options.setCameraType(preRidingPerspective);
                 }
@@ -126,9 +138,19 @@ public class NimbleRewynnded implements ClientModInitializer {
 
     //Add new entity classes here if wynncraft adds custom mounts
     private boolean shouldChangePerspective(Entity vehicle) {
+        String className = vehicle.getClass().getName();
+        // Fallback for custom Wynncraft entities identified by intermediary names
+        if (className.contains("class_1501") || className.contains("class_1621")) {
+            return true;
+        }
+
         return vehicle instanceof AbstractMinecart
                 || vehicle instanceof Horse
+                || vehicle instanceof SkeletonHorse
+                || vehicle instanceof ZombieHorse
+                || vehicle instanceof Camel
                 || vehicle instanceof Boat
-                || vehicle instanceof Strider;
+                || vehicle instanceof Strider
+                || vehicle instanceof ArmorStand;
     }
 }
