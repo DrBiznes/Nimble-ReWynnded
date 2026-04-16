@@ -32,12 +32,12 @@ public class NimbleRewynnded implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         KeyMapping.Category category = KeyMapping.Category.register(Identifier.parse("nimblerewynnded:keys"));
-        togglePerspectiveKey = new KeyMapping(
+        togglePerspectiveKey = KeyBindingHelper.registerKeyBinding(new KeyMapping(
                 "key.nimblerewynnded.toggleperspective",
                 InputConstants.Type.KEYSYM,
                 GLFW.GLFW_KEY_F5,
-                KeyMapping.Category.MISC
-        );
+                category
+        ));
 
         frontViewKey = KeyBindingHelper.registerKeyBinding(new KeyMapping(
                 "key.nimblerewynnded.frontview",
