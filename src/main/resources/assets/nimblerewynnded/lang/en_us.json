@@ -1,5 +1,10 @@
 {
   "key.category.nimblerewynnded.keys": "Nimble ReWynnded",
   "key.nimblerewynnded.toggleperspective": "Toggle Third Person",
-  "key.nimblerewynnded.frontview": "Hold for Front View"
+  "key.nimblerewynnded.freethirdperson": "Toggle Free Third Person",
+  "key.nimblerewynnded.frontview": "Hold for Front View",
+  "perspective.nimblerewynnded.free_third_person.name": "Free Third Person",
+  "perspective.nimblerewynnded.free_third_person.description": "Orbit the camera around your character while you run in the direction you move",
+  "switcher.nimblerewynnded.toggle.name": "Nimble Toggle",
+  "switcher.nimblerewynnded.toggle.description": "Toggles between first and third person with the Nimble ReWynnded key. Front view is only shown while its key is held"
 }

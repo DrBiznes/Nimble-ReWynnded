@@ -9,10 +9,11 @@ Wynncraft-specific camera utilities, inspired by the mod Nimble. Fixes weird thi
 - Switches back to your original perspective when dismounting
 - The third-person front view now requires holding Left Alt
 - Fixes third person view bugs during Wynncraft cutscenes and death animations
+- New free third person view: the camera orbits you freely, and you run in the direction you move. Toggle it with its own keybind (unbound by default, set it in the keybinds menu), scroll to zoom
 - Configurable keybinds for toggling perspective and front view
 
 ## Installation
-1. Make sure you have Fabric Loader and Fabric API installed
+1. Make sure you have Fabric Loader, Fabric API and [Perspective API](https://modrinth.com/mod/perspective-api) installed
 2. Download the latest version of Nimble Rewynnded from the versions page
 3. Place the downloaded .jar file in your Minecraft mods folder
 4. Ride off into the Wynncraft sunset
@@ -24,6 +25,8 @@ Wynncraft-specific camera utilities, inspired by the mod Nimble. Fixes weird thi
 
 ## Configuration
 This mod creates its own section in the change keybinds menu so just make sure to set your new keybinds in that section.
+
+Camera switching goes through Perspective API, so it plays nicely with other camera mods. Nimble adds its own "Nimble Toggle" switcher there and selects it the first time you launch; you can pick a different switcher in Perspective API's settings at any time.
 
 
 ## Usage
@@ -37,6 +40,7 @@ This mod creates its own section in the change keybinds menu so just make sure t
 - Minecraft 1.21
 - Fabric Loader 0.16.0 or higher
 - Fabric API
+- [Perspective API](https://modrinth.com/mod/perspective-api) 1.5.0-beta or higher
 
 ## Go Ham
 - I don't know nothing about java so if you wanna fork this and fix it up go ham.
